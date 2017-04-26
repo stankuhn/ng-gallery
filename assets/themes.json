@@ -2,38 +2,73 @@
   {
     "name": "Config1",
     "config": {
-      "animation": "fade",
-      "width": "900px",
-      "height": "500px",
-      "description": {
-        "position": "bottom",
-        "overlay": true,
-        "text": true,
-        "counter": true
+      "style": {
+        "background": "#121519",
+        "width": "900px",
+        "height": "500px"
       },
-      "thumbnails": {
-        "width": 120,
-        "height": 90,
-        "position": "top"
-      },
-      "bullets": false
-    }
-  },
-  {
-    "name": "Config2",
-    "config": {
       "animation": "slide",
-      "width": "700px",
-      "height": "500px",
+      "loader": {
+        "width": "50px",
+        "height": "50px",
+        "position": "center",
+        "icon": "oval"
+      },
       "description": {
         "position": "bottom",
         "overlay": false,
         "text": true,
         "counter": true
       },
-      "thumbnails": false,
+      "bullets": false,
+      "player": {
+        "autoplay": false,
+        "speed": 3000
+      },
+      "thumbnails": {
+        "width": 120,
+        "height": 90,
+        "position": "top",
+        "space": 20
+      }
+    }
+  },
+  {
+    "name": "Config2",
+    "config": {
+      "style": {
+        "background": "#121519",
+        "width": "900px",
+        "height": "500px"
+      },
+      "animation": "slide",
+      "loader": {
+        "width": "50px",
+        "height": "50px",
+        "position": "center",
+        "icon": "oval"
+      },
+      "description": {
+        "position": "bottom",
+        "overlay": true,
+        "text": true,
+        "counter": true,
+        "style": {
+          "background": "rgba(0,0,0, 0.5)"
+        }
+      },
       "bullets": {
         "position": "top"
+      },
+      "player": {
+        "autoplay": false,
+        "speed": 3000
+      },
+      "thumbnails": {
+        "width": 120,
+        "height": 90,
+        "position": "left",
+        "space": "10"
       }
     }
   }
