@@ -26,6 +26,10 @@ export class GalleryModalComponent implements OnDestroy {
   /** Activate keyboard for navigation */
   @HostListener('window:keydown', ['$event'])
   keyboardInput(event: KeyboardEvent) {
+    
+    if (!this.gallery.state.getValue().active)
+      return;
+    
     switch (event.keyCode) {
       case 37:  // prev
         this.gallery.prev();
